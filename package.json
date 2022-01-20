@@ -33,5 +33,8 @@
     "gulp-modify": "^0.1.1",
     "gulp-sort": "^2.0.0",
     "gulp-svgmin": "^2.2.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.9"
   }
 }
