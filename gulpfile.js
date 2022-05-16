@@ -18,6 +18,7 @@ const cxlVaadinIconset = [
   'check-circle.svg',
   'comment.svg',
   'ellipsis-dots-v.svg',
+  'external-link.svg',
   'play-circle-o.svg',
   'quote-right.svg',
   'star.svg',
