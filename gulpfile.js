@@ -10,13 +10,22 @@ const modify = require('gulp-modify');
 const cheerio = require('cheerio');
 const concat = require('gulp-concat');
 const sort = require('gulp-sort');
+const path = require('path');
 
 const vaadinIconFontData = require('./assets/vaadin-font-icons.json');
 
 const cxlVaadinIconset = [
   'check-circle.svg',
+  'comment.svg',
+  'ellipsis-dots-v.svg',
+  'external-link.svg',
   'play-circle-o.svg',
   'quote-right.svg',
+  'star.svg',
+  'thumbs-down.svg',
+  'thumbs-down-o.svg',
+  'thumbs-up.svg',
+  'thumbs-up-o.svg',
 ];
 
 /**
@@ -44,7 +53,7 @@ gulp.task('icons', function() {
     }))
     .pipe(modify({
       fileModifier: function(file, contents) {
-        var id = file.path.replace(/.*\/(.*).svg/, '$1');
+        var id = path.parse(file.path).name;
         var svg = cheerio.load(contents, {xmlMode: true})('svg');
         // Remove fill attributes.
         svg.children('[fill]').removeAttr('fill');
