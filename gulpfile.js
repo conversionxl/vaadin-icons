@@ -19,6 +19,8 @@ const cxlVaadinIconset = [
   'comment.svg',
   'ellipsis-dots-v.svg',
   'external-link.svg',
+  'facebook.svg',
+  'link.svg',
   'play-circle-o.svg',
   'quote-right.svg',
   'star.svg',
@@ -26,6 +28,7 @@ const cxlVaadinIconset = [
   'thumbs-down-o.svg',
   'thumbs-up.svg',
   'thumbs-up-o.svg',
+  'twitter.svg',
 ];
 
 /**
