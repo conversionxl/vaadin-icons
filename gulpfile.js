@@ -21,6 +21,7 @@ const cxlVaadinIconset = [
   'external-link.svg',
   'facebook.svg',
   'link.svg',
+  'lock.svg',
   'play-circle-o.svg',
   'quote-right.svg',
   'star.svg',
